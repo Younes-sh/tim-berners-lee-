@@ -1,6 +1,4 @@
-/* font-family: 'Open Sans', sans-serif;
-font-family: 'Orbitron', sans-serif;
-font-family: 'Oswald', sans-serif; */
+
 
 *{
     margin: 0%;
@@ -9,6 +7,8 @@ font-family: 'Oswald', sans-serif; */
 }
 body{
     background-color: #EBEAEA;
+     font-family: 'Open Sans', sans-serif;
+
 }
 .head{grid-area:head;}
 .main{grid-area: main;}
@@ -27,7 +27,7 @@ body{
 /*          Profile              */
 .container-profile {
     max-width: 100%;
-    height: 460px;
+    height: 480px;
     margin-top: 100px;
     background-color:#FEFEFF ;
     border-radius: 5px;
@@ -63,7 +63,7 @@ body{
 .icons{
     max-width: 100%;
     height: 200px;
-    margin-top: -300px;
+    margin-top: -280px;
     border-radius: 5px;
     background-color: #FEFEFF;
 }
@@ -80,7 +80,7 @@ body{
 .cards{
     max-width: 100%;
     height: 500px;
-    margin-top: -400px;
+    margin-top: -360px;
     border-radius: 5px;
     background-color: #FEFEFF;
     color: gray;
@@ -112,4 +112,15 @@ body{
 }
 .footer .card p{
     padding: 20px 10px;
+}
+/*          Media Query Responsive */
+@media screen and (max-width:550px) {
+    .icons{
+        margin-top: -235px;
+    }
+    .cards{
+        margin-top: -270px;
+        height: 550px;
+    }
+
 }
