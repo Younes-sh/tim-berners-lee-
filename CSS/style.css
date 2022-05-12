@@ -1,0 +1,115 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Oswald', sans-serif; */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: #EBEAEA;
+}
+.head{grid-area:head;}
+.main{grid-area: main;}
+.footer{grid-area: footer;}
+/*              Container    */
+.container{
+    max-width:500px;
+    height: 1600px;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-areas: 'head head head'
+    'main main main'
+    'footer footer footer';
+}
+/*          Profile              */
+.container-profile {
+    max-width: 100%;
+    height: 460px;
+    margin-top: 100px;
+    background-color:#FEFEFF ;
+    border-radius: 5px;
+}
+.container-profile img{
+    max-width: 150px;
+    margin-top: 20px;
+    border: solid 5px rgb(179, 182, 184);
+    border-radius: 50%;
+}
+.container-profile h1{
+    margin: 20px;
+    color: #DC5455;
+}
+.container-profile h2{
+    color: gray;
+}
+.container-profile p{
+    padding: 10px 20px;
+    text-align: left;
+    font-size: 18px;
+    color: gray;
+}
+.container-profile button{
+    padding: 10px;
+    background-color: #DC5455;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 17;
+}
+/*              Main  Icons      */
+.icons{
+    max-width: 100%;
+    height: 200px;
+    margin-top: -300px;
+    border-radius: 5px;
+    background-color: #FEFEFF;
+}
+.icons li{
+    display: inline-block;
+    margin: 50px 20px;
+}
+.icons a{
+    text-decoration: none;
+    color: rgba(128, 128, 128, 0.808);
+}
+
+/*          Footer          */
+.cards{
+    max-width: 100%;
+    height: 500px;
+    margin-top: -400px;
+    border-radius: 5px;
+    background-color: #FEFEFF;
+    color: gray;
+}
+.cards .card{
+    float: left;
+    text-align: left;
+}
+.cards h2{
+    padding: 20px;
+    color: grey;
+    text-align: center;
+}
+
+.cards li{
+    list-style-type: none;
+}
+.cards .text-li li{
+    display: inline-block;
+}
+.cards img{
+    max-width: 100px;
+    padding: 10px;
+    float: left;
+}
+.footer .card h3{
+    text-align: center;
+    padding-top: 7px;
+}
+.footer .card p{
+    padding: 20px 10px;
+}
